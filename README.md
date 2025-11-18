@@ -67,10 +67,9 @@ A situação dos protocolos pode ser alterada a qualquer momento pela **sidebar*
 
 A exibição dos dados é feita com `st.dataframe`, que adiciona vários recursos automáticos para o usuário, como:
 
-- **Ordenar** as colunas (por nome, código, data, etc.)  
-- **Filtrar** ou reorganizar visualmente as informações  
-- **Redimensionar** colunas  
-- **Ocultar/mostrar** colunas conforme a necessidade  
+- **Ordenar** e **Redimensionar** as colunas
+- **Reorganizar** visualmente as informações (ordem alfabética ou classificação númerica)
+- **Ocultar/Fixar** colunas conforme a necessidade  
 
 Esses recursos são disponibilizados pelo próprio **Streamlit/Pandas** na tabela interativa, sem que o usuário precise escrever código.
 
@@ -114,4 +113,3 @@ Somente se o usuário confirmar é que todos os protocolos são removidos da tab
 ## 📜 Sobre a criação
 
 Este projeto foi criado com fins **educacionais** e **demonstrativos**.
-
