@@ -1,51 +1,114 @@
 # 📑 Sistema de Controle de Protocolos
 
-Aplicação web desenvolvida em **Python** com **Streamlit** para registrar, listar e buscar protocolos de atendimento de forma simples e organizada.  
-O sistema gera códigos sequenciais automaticamente, permite atualizar a situação dos protocolos e exibe os dados em uma tabela interativa.
+Aplicação desenvolvida em **Python** com **Streamlit** para registrar, listar e buscar protocolos de atendimento de forma simples, rápida e totalmente online.  
+O objetivo do projeto é oferecer uma forma organizada de controlar solicitações, combinando **praticidade**, **visual limpo** e **interatividade na tabela de dados**.
 
 ---
 
 ## 🌐 Acesse o Projeto Online
 
-➡️ **Link do app no Streamlit Cloud:**  
-`(adicione aqui o link quando publicar)`
+[Clique aqui para usar o Sistema de Controle de Protocolos](https://SEU-LINK-AQUI.streamlit.app/)
 
-Nenhuma instalação é necessária — o sistema roda diretamente no navegador através do Streamlit Cloud.
+Nenhuma instalação ou download é necessário — o projeto é executado diretamente no navegador por meio do **Streamlit Cloud**, garantindo fácil acesso e compatibilidade com qualquer dispositivo.
 
 ---
 
 ## ⚙️ Tecnologias Utilizadas
 
-- **Python 3** – Linguagem principal do projeto.  
-- **Streamlit** – Framework para criação de interfaces web interativas em Python.  
-- **Pandas** – Manipulação dos dados em forma de tabela (DataFrame).  
-- **datetime** – Registro automático da data de criação dos protocolos.  
-- **CSS customizado (`styles.css`)** – Personalização da interface (inputs, selects, botões e título).  
-- **`requirements.txt`** – Lista das dependências do projeto.
+### 🐍 **Python 3**
+
+Responsável por toda a lógica da aplicação: geração de códigos, tratamento das entradas do usuário e regras de negócio.
+
+### 💻 **Streamlit**
+
+Framework utilizado para transformar o script Python em uma aplicação web interativa, com formulários, sidebar e exibição de tabelas em tempo real.
+
+### 🧮 **Pandas**
+
+Usado para armazenar e manipular os protocolos em um **DataFrame**, permitindo organizar os dados em formato de tabela e aplicar filtros de forma simples.
+
+### ⏱️ **datetime**
+
+Biblioteca utilizada para registrar automaticamente a **data de criação** de cada protocolo salvo no sistema.
+
+### 🎨 **CSS customizado (`styles.css`)**
+
+Arquivo responsável por personalizar a interface padrão do Streamlit, ajustando:
+
+- bordas e foco dos campos de texto  
+- aparência dos campos de seleção (selectbox)  
+- cores e estilo dos botões e título
+
+### 📦 **`requirements.txt`**
+
+Arquivo que lista as dependências necessárias para executar o projeto (como `streamlit` e `pandas`).
 
 ---
 
-## 🧠 Funcionalidades
+## 🧠 Como o Sistema Funciona
 
-- Registro de novos protocolos com:
-  - Código gerado automaticamente (`2025-0001`, `2025-0002`, …)
-  - Nome do solicitante  
-  - Tipo de serviço  
-  - Data de criação  
-  - Situação inicial: **“Em andamento”**
-- Alteração da situação pela barra lateral:
-  - Em andamento
-  - Concluído
-  - Cancelado
-- Tabela interativa com todos os protocolos cadastrados.
-- Cores diferentes para cada situação na tabela.
-- Campo de busca por:
-  - Código do protocolo
-  - Nome do solicitante
-- Botão de **“Limpar Tabela”** com confirmação antes de apagar todos os registros.
+O fluxo básico da aplicação é o seguinte:
+
+1. O usuário preenche o **nome do solicitante** e escolhe o **tipo de serviço**.
+2. Ao salvar, o sistema:
+   - gera automaticamente um **código sequencial** no formato `2025-0001`, `2025-0002`, …  
+   - registra a **data atual**  
+   - define a **situação inicial** como `Em andamento`  
+3. Os dados são armazenados em um **DataFrame do Pandas**, mantido na sessão através do `st.session_state`.
+4. Todos os protocolos são exibidos em uma **tabela interativa**, permitindo visualizar, explorar e buscar informações.
+
+A situação dos protocolos pode ser alterada a qualquer momento pela **sidebar**, informando o código e escolhendo uma nova situação.
 
 ---
 
-## 📜 Sobre a criação do projeto
+## 📊 Tabela Interativa e Recursos Extras
 
-Este projeto foi criado com fins **educacionais** e **demonstrativos**.  
+A exibição dos dados é feita com `st.dataframe`, que adiciona vários recursos automáticos para o usuário, como:
+
+- **Ordenar** as colunas (por nome, código, data, etc.)  
+- **Filtrar** ou reorganizar visualmente as informações  
+- **Redimensionar** colunas  
+- **Ocultar/mostrar** colunas conforme a necessidade  
+
+Esses recursos são disponibilizados pelo próprio **Streamlit/Pandas** na tabela interativa, sem que o usuário precise escrever código.
+
+Além disso, as células da coluna **“Situação”** recebem cores diferentes com base no estado:
+
+- Azul claro para **Em andamento**  
+- Verde para **Concluído**  
+- Vermelho suave para **Cancelado**
+
+Isso facilita a leitura e o entendimento visual dos protocolos.
+
+---
+
+## 🔍 Busca de Protocolos
+
+A aplicação também possui uma seção específica para **busca**, onde o usuário pode:
+
+- digitar parte do **código** do protocolo  
+- ou parte do **nome** do solicitante  
+
+O sistema filtra os resultados em tempo real e exibe apenas os protocolos que correspondem ao termo informado.  
+Se não houver nenhum resultado, uma mensagem amigável informa que nada foi encontrado.
+
+---
+
+## 🧹 Limpeza e Confirmação
+
+Para evitar exclusões acidentais, o botão **“Limpar Tabela”** não apaga diretamente os dados.  
+Ao clicar, o sistema:
+
+1. Ativa um modo de **confirmação de limpeza**  
+2. Exibe um aviso em destaque  
+3. Mostra dois botões:
+   - ✅ *“Sim, apagar tudo”*  
+   - ❌ *“Cancelar”*  
+
+Somente se o usuário confirmar é que todos os protocolos são removidos da tabela.
+
+---
+
+## 📜 Sobre a criação
+
+Este projeto foi criado com fins **educacionais** e **demonstrativos**.
