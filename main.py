@@ -2,12 +2,14 @@ import streamlit as st
 import pandas as pd #P/ trabalhar com tabelas
 from datetime import datetime
 
-with open("styles.css", "r", encoding="utf-8") as f: #Injetar o CSS
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
 #---------- CONFIGURAÇÃO DA PÁGINA ----------
 
 st.set_page_config(page_title="Controle de Protocolos", layout="wide")
+
+#---------- APLICAR O CSS ----------
+
+with open("styles.css", "r", encoding="utf-8") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 #---------- INICIALIZAR O DATAFRAME ----------
 
