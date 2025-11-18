@@ -33,11 +33,13 @@ Biblioteca utilizada para registrar automaticamente a **data de criação** de c
 
 ### 🎨 **CSS customizado (`styles.css`)**
 
-Arquivo responsável por personalizar a interface padrão do Streamlit, ajustando:
+A interface foi personalizada com foco em **clareza visual** e **experiência do usuário (UX)**:
 
-- bordas e foco dos campos de texto  
-- aparência dos campos de seleção (selectbox)  
-- cores e estilo dos botões e título
+- campos de formulário com realce em azul ao focar  
+- botões com destaque e feedback visual no hover  
+- hierarquia visual simples, com título em evidência e seções bem separadas  
+
+A ideia foi deixar o uso do sistema mais intuitivo, reduzindo ruídos visuais e aproximando a interface de um painel moderno de controle.
 
 ### 📦 **`requirements.txt`**
 
@@ -112,3 +114,4 @@ Somente se o usuário confirmar é que todos os protocolos são removidos da tab
 ## 📜 Sobre a criação
 
 Este projeto foi criado com fins **educacionais** e **demonstrativos**.
+
