@@ -67,11 +67,11 @@ A situação dos protocolos pode ser alterada a qualquer momento pela **sidebar*
 
 A exibição dos dados é feita com `st.dataframe`, que adiciona vários recursos automáticos para o usuário, como:
 
-- **Ordenar** e **Redimensionar** as colunas
-- **Reorganizar** visualmente as informações (ordem alfabética ou classificação númerica)
+- **Ordenar** e **Redimensionar** as colunas  
+- **Reorganizar** visualmente as informações (ordem alfabética ou classificação numérica)  
 - **Ocultar/Fixar** colunas conforme a necessidade  
 
-Esses recursos são disponibilizados pelo próprio **Streamlit/Pandas** na tabela interativa, sem que o usuário precise escrever código.
+Esses recursos são disponibilizados pela própria tabela interativa, permitindo que o usuário explore os dados sem precisar escrever código.
 
 Além disso, as células da coluna **“Situação”** recebem cores diferentes com base no estado:
 
@@ -90,7 +90,7 @@ A aplicação também possui uma seção específica para **busca**, onde o usu�
 - digitar parte do **código** do protocolo  
 - ou parte do **nome** do solicitante  
 
-O sistema filtra os resultados em tempo real e exibe apenas os protocolos que correspondem ao termo informado.  
+O sistema filtra os resultados e exibe apenas os protocolos que correspondem ao termo informado.  
 Se não houver nenhum resultado, uma mensagem amigável informa que nada foi encontrado.
 
 ---
@@ -113,4 +113,3 @@ Somente se o usuário confirmar é que todos os protocolos são removidos da tab
 ## 📜 Sobre a criação
 
 Este projeto foi criado com fins **educacionais** e **demonstrativos**.
-
