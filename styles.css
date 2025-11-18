@@ -1,0 +1,77 @@
+/* ---------- Input de texto (text_input) ---------- */
+
+/* contêiner do input */
+div[data-baseweb="input"] {
+    border-radius: 6px !important;
+    border: 1px solid #cfd8e3 !important;
+    box-shadow: none !important;
+    outline: none !important; /* Remove o contorno padrão */
+    transition: border 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* próprio campo de texto */
+div[data-baseweb="input"] input {
+    border: none !important; /* tira borda interna */
+    border-radius: 6px !important;
+    padding: 6px 8px !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Focado – borda e glow azul */
+div[data-baseweb="input"]:focus-within {
+    border: 1px solid #2b94d2 !important;
+    box-shadow: 0 0 4px rgba(43, 148, 210, 0.6) !important;
+}
+
+
+/* ---------- Selectbox ---------- */
+
+/* contêiner externo do select */
+div[data-baseweb="select"] {
+    border-radius: 6px !important;
+    border: 1px solid #cfd8e3 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    transition: box-shadow 0.15s ease;
+}
+
+/* Para evitar bordas duplicadas */
+div[data-baseweb="select"] > div {
+    border: none !important;
+}
+
+/* área clicável onde aparece o valor selecionado */
+div[data-baseweb="select"] div[role="button"] {
+    border-radius: 6px !important;
+    padding: 6px 8px !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Focado e com o dropdown aberto */
+div[data-baseweb="select"]:focus-within,
+div[data-baseweb="select"] div[aria-expanded="true"] {
+    box-shadow: 0 0 4px rgba(43, 148, 210, 0.6) !important;
+    border-color: #2b94d2 !important;
+}
+
+
+/* ---------- Título e Botões ---------- */
+
+h1 {
+    color: #2b94d2 !important;
+}
+
+.stButton button {
+    background-color: #2b94d2 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    font-weight: 600 !important;
+    transition: background 0.2s ease;
+}
+
+.stButton button:hover {
+    background-color: #1e6ea8 !important;
+}
