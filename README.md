@@ -5,7 +5,7 @@ O objetivo do projeto é oferecer uma forma organizada de controlar solicitaçõ
 
 ---
 
-![texto alternativo](print sistema de protocolos.png)
+![Interface do sistema](print_sistema_protocolos.png)
 
 ## 🌐 Acesse o Projeto Online
 
