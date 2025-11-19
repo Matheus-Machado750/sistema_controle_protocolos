@@ -5,6 +5,8 @@ O objetivo do projeto é oferecer uma forma organizada de controlar solicitaçõ
 
 ---
 
+![texto alternativo](print sistema de protocolos.png)
+
 ## 🌐 Acesse o Projeto Online
 
 [Clique aqui para usar o Sistema de Controle de Protocolos](https://matheus-machado-sistema-de-controle-de-protocolos.streamlit.app/)
