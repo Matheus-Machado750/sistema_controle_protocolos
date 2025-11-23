@@ -67,11 +67,10 @@ A situação dos protocolos pode ser alterada a qualquer momento pela **sidebar*
 
 ## 📊 Tabela Interativa e Recursos Extras
 
-A exibição dos dados é feita com `st.dataframe`, que adiciona vários recursos automáticos para o usuário, como:
+A exibição dos dados é feita com `st.dataframe`, que adiciona recursos automáticos para o usuário, como:
 
-- **Ordenar** e **Redimensionar** as colunas  
-- **Reorganizar** visualmente as informações (ordem alfabética ou classificação numérica)  
-- **Ocultar/Fixar** colunas conforme a necessidade  
+- **Redimensionar** as colunas  
+- **Reorganizar** visualmente as informações (ordem alfabética ou classificação numérica)   
 
 Esses recursos são disponibilizados pela própria tabela interativa, permitindo que o usuário explore os dados sem precisar escrever código.
 
