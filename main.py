@@ -21,11 +21,19 @@ if "confirmar_limpeza" not in st.session_state:
 #---------- FUNÇÃO P/ GERAR O PRÓXIMO CÓDIGO AUTOMATICAMENTE ----------
 
 def gerar_codigo():
+    ano = "2026"
+
     if st.session_state.protocolos.empty:
-        return "2026-0001"
+        return f"{ano}-0001"
+
     ultimo_codigo = st.session_state.protocolos["Código"].iloc[-1] #Pega a coluna "Código" e .iloc[-1] pega a última linha dessa coluna
-    numero = int(ultimo_codigo.split("-")[1]) + 1 #Divide a str no "-", pega a 2º parte [1], converte p/ int e soma 1
-    return f"2026-{numero:04d}"
+
+    #Se o último código NÃO for de 2026, reinicia a contagem
+    if not ultimo_codigo.startswith(ano):
+        return f"{ano}-0001"
+
+    numero = int(ultimo_codigo.split("-")[1]) + 1  #Divide a str no "-", pega a 2º parte [1], converte p/ int e soma 1
+    return f"{ano}-{numero:04d}"
 
 #---------- SIDEBAR - ALTERAR SITUAÇÃO ----------
 
