@@ -22,10 +22,10 @@ if "confirmar_limpeza" not in st.session_state:
 
 def gerar_codigo():
     if st.session_state.protocolos.empty:
-        return "2025-0001"
+        return "2026-0001"
     ultimo_codigo = st.session_state.protocolos["Código"].iloc[-1] #Pega a coluna "Código" e .iloc[-1] pega a última linha dessa coluna
     numero = int(ultimo_codigo.split("-")[1]) + 1 #Divide a str no "-", pega a 2º parte [1], converte p/ int e soma 1
-    return f"2025-{numero:04d}"
+    return f"2026-{numero:04d}"
 
 #---------- SIDEBAR - ALTERAR SITUAÇÃO ----------
 
@@ -115,7 +115,7 @@ if not st.session_state.protocolos.empty: #Só mostra a tabela se houver pelo me
         return cores.get(val, "") #Caso o valor esteja no dict, retorna a cor
 
     st.dataframe(
-        df.style.applymap(colorir_situacao, subset=["Situação"]), #Aplica a função acima apenas nas células de "Situação"
+        df.style.map(colorir_situacao, subset=["Situação"]), #Aplica a função acima apenas nas células de "Situação"
         use_container_width=True,
         hide_index=True
     )
@@ -136,7 +136,7 @@ if not st.session_state.protocolos.empty: #Só mostra a tabela se houver pelo me
             st.success(f"{len(resultados)} resultado(s) encontrado(s):")
 
             st.dataframe( #Mostra só os resultados filtrados, já com cor
-                resultados.style.applymap(colorir_situacao, subset=["Situação"]),
+                resultados.style.map(colorir_situacao, subset=["Situação"]),
                 use_container_width=True,
                 hide_index=True
             )
