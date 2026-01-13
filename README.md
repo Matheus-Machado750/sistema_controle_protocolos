@@ -9,7 +9,9 @@ O objetivo do projeto é oferecer uma forma organizada de controlar solicitaçõ
 
 ## 🌐 Acesse o Projeto Online
 
-[Clique aqui para usar o Sistema de Controle de Protocolos](https://matheus-machado-sistema-de-controle-de-protocolos.streamlit.app/)
+<a href="https://matheus-machado-sistema-de-controle-de-protocolos.streamlit.app/" target="_blank" rel="noopener noreferrer">
+    Clique aqui para usar o Sistema de Controle de Protocolos
+</a>
 
 Nenhuma instalação ou download é necessário — o projeto é executado diretamente no navegador por meio do **Streamlit Cloud**, garantindo fácil acesso e compatibilidade com qualquer dispositivo.
 
