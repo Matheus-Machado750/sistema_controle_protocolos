@@ -107,6 +107,6 @@ Somente se o usuário confirmar é que todos os protocolos são removidos da tab
 
 ---
 
-## 📜 Sobre a criação
+## Sobre a criação
 
 Este projeto foi criado com fins **educacionais** e **demonstrativos**.
