@@ -1,4 +1,4 @@
-# 📑 Sistema de Controle de Protocolos
+# Sistema de Controle de Protocolos
 
 Aplicação desenvolvida em **Python** com **Streamlit** para registrar, listar e buscar protocolos de atendimento de forma simples, rápida e totalmente online.  
 O objetivo do projeto é oferecer uma forma organizada de controlar solicitações, combinando **praticidade**, **visual limpo** e **interatividade na tabela de dados**.
@@ -42,10 +42,6 @@ A interface foi personalizada com foco em **clareza visual** e **experiência do
 - hierarquia visual simples, com título em evidência e seções bem separadas  
 
 A ideia foi deixar o uso do sistema mais intuitivo, reduzindo ruídos visuais e aproximando a interface de um painel moderno de controle.
-
-### 📦 **`requirements.txt`**
-
-Arquivo que lista as dependências necessárias para executar o projeto (como `streamlit` e `pandas`).
 
 ---
 
@@ -96,7 +92,7 @@ Se não houver nenhum resultado, uma mensagem amigável informa que nada foi enc
 
 ---
 
-## 🧹 Limpeza e Confirmação
+## Limpeza e Confirmação
 
 Para evitar exclusões acidentais, o botão **“Limpar Tabela”** não apaga diretamente os dados.  
 Ao clicar, o sistema:
