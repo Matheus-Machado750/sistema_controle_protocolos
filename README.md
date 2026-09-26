@@ -15,23 +15,23 @@ Nenhuma instalação ou download é necessário — o projeto é executado diret
 
 ## ⚙️ Tecnologias Utilizadas
 
-### 🐍 **Python 3**
+### **Python 3**
 
 Responsável por toda a lógica da aplicação: geração de códigos, tratamento das entradas do usuário e regras de negócio.
 
-### 💻 **Streamlit**
+### **Streamlit**
 
 Framework utilizado para transformar o script Python em uma aplicação web interativa, com formulários, sidebar e exibição de tabelas em tempo real.
 
-### 🧮 **Pandas**
+### **Pandas**
 
 Usado para armazenar e manipular os protocolos em um **DataFrame**, permitindo organizar os dados em formato de tabela e aplicar filtros de forma simples.
 
-### ⏱️ **datetime**
+### **datetime**
 
 Biblioteca utilizada para registrar automaticamente a **data de criação** de cada protocolo salvo no sistema.
 
-### 🎨 **CSS customizado (`styles.css`)**
+### **CSS customizado (`styles.css`)**
 
 A interface foi personalizada com foco em **clareza visual** e **experiência do usuário (UX)**:
 
@@ -41,7 +41,7 @@ A interface foi personalizada com foco em **clareza visual** e **experiência do
 
 A ideia foi deixar o uso do sistema mais intuitivo, reduzindo ruídos visuais e aproximando a interface de um painel moderno de controle.
 
-### 📦 **`requirements.txt`**
+### **`requirements.txt`**
 
 Arquivo que lista as dependências necessárias para executar o projeto (como `streamlit` e `pandas`).
 
@@ -95,7 +95,7 @@ Se não houver nenhum resultado, uma mensagem amigável informa que nada foi enc
 
 ---
 
-## 🧹 Limpeza e Confirmação
+## Limpeza e Confirmação
 
 Para evitar exclusões acidentais, o botão **“Limpar Tabela”** não apaga diretamente os dados.  
 Ao clicar, o sistema:
