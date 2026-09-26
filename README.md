@@ -1,15 +1,17 @@
-# 📑 Sistema de Controle de Protocolos
+# Sistema de Controle de Protocolos
 
 Aplicação desenvolvida em **Python** com **Streamlit** para registrar, listar e buscar protocolos de atendimento de forma simples, rápida e totalmente online.  
 O objetivo do projeto é oferecer uma forma organizada de controlar solicitações, combinando **praticidade**, **visual limpo** e **interatividade na tabela de dados**.
 
 ---
 
+![Interface do sistema](print_sistema_protocolos.png)
+
 ## 🌐 Acesse o Projeto Online
 
-[Clique aqui para usar o Sistema de Controle de Protocolos](https://SEU-LINK-AQUI.streamlit.app/)
+[Clique aqui para usar o Sistema. (Ctrl + clique para abrir em uma nova aba)](https://matheus-machado-sistema-de-controle-de-protocolos.streamlit.app/)
 
-Nenhuma instalação ou download é necessário — o projeto é executado diretamente no navegador por meio do **Streamlit Cloud**, garantindo fácil acesso e compatibilidade com qualquer dispositivo.
+Nenhuma instalação ou download é necessário, o projeto é executado diretamente no navegador por meio do **Streamlit Cloud**, garantindo fácil acesso e compatibilidade com qualquer dispositivo.
 
 ---
 
@@ -65,11 +67,10 @@ A situação dos protocolos pode ser alterada a qualquer momento pela **sidebar*
 
 ## 📊 Tabela Interativa e Recursos Extras
 
-A exibição dos dados é feita com `st.dataframe`, que adiciona vários recursos automáticos para o usuário, como:
+A exibição dos dados é feita com `st.dataframe`, que adiciona recursos automáticos para o usuário, como:
 
-- **Ordenar** e **Redimensionar** as colunas  
-- **Reorganizar** visualmente as informações (ordem alfabética ou classificação numérica)  
-- **Ocultar/Fixar** colunas conforme a necessidade  
+- **Redimensionar** as colunas  
+- **Reorganizar** visualmente as informações (ordem alfabética ou classificação numérica)   
 
 Esses recursos são disponibilizados pela própria tabela interativa, permitindo que o usuário explore os dados sem precisar escrever código.
 
@@ -110,6 +111,6 @@ Somente se o usuário confirmar é que todos os protocolos são removidos da tab
 
 ---
 
-## 📜 Sobre a criação
+## Sobre a criação
 
 Este projeto foi criado com fins **educacionais** e **demonstrativos**.
